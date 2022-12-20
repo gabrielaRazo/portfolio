@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../../components/navbar/navbar';
+import Header from '../../layouts/header/header';
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Header />
     </>
   );
 };
