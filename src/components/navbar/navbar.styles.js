@@ -5,7 +5,7 @@ export const Tag = styled.div`
   margin-top: 1.7em;
   width: 100%;
   color: ${colors.colors.salmon};
-  opacity: 0.5;
+  opacity: 0.7;
   text-align: center;
   cursor: pointer;
   span {
