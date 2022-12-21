@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
 export const Tag = styled.div`
-  margin-top: 2em;
+  margin-top: 1.7em;
   width: 100%;
   color: ${colors.colors.salmon};
   opacity: 0.5;
