@@ -20,18 +20,16 @@ const Contact = () => {
         <Line up />
       </Container>
       <Container rigth>
-        <div orientation="right">
-          <Line down />
-          <StyledIcon>
-            <a
-              href="mailto:gabrielarazoroldan@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faInbox} />
-            </a>
-          </StyledIcon>
-        </div>
+        <Line down />
+        <StyledIcon>
+          <a
+            href="mailto:gabrielarazoroldan@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faInbox} />
+          </a>
+        </StyledIcon>
       </Container>
     </>
   );

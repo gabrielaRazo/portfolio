@@ -1,16 +1,8 @@
 import React from 'react';
-import Contact from '../../components/contact/contact';
-import Header from '../../layouts/header/header';
-import { Container } from './home.styles';
 const Home = () => {
   return (
     <>
-      <Container>
-        <div></div>
-        <Header />
-        <div></div>
-      </Container>
-      <Contact />
+      <h1>Home</h1>
     </>
   );
 };
