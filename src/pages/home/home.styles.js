@@ -31,7 +31,12 @@ const media = {
     `,
 };
 
-export const ContainerCenter = styled.div`
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+`;
+
+export const Center = styled.div`
   width: 100%;
   height: 100%;
   display: flex;

@@ -1,9 +1,14 @@
 import React from 'react';
 import Header from '../../layouts/header/header';
+import { Container } from './home.styles';
 const Home = () => {
   return (
     <>
-      <Header />
+      <Container>
+        <div></div>
+        <Header />
+        <div></div>
+      </Container>
     </>
   );
 };

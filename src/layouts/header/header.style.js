@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Logo = styled.img`
-  width: 100%;
+  width: 70px;
 `;
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(11, 7.7%);
+  grid-template-columns: 10% 90%;
   grid-template-rows: auto 50px;
-  column-gap: 1rem;
+  column-gap: 0.5rem;
 `;
