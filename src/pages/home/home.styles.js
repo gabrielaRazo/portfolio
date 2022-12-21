@@ -57,3 +57,15 @@ export const Col = styled.div`
   }
   ${(props) => props.collapse && media[props.collapse](`display:none;`)};
 `;
+
+export const Row = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  ${({ centered }) =>
+    centered && `width: 100%; align-items: center; justify-content: center;`};
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+`;
