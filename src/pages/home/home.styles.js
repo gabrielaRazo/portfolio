@@ -9,6 +9,12 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 45px;
+    @media (min-width: 481px) and (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
   h4 {
     color: ${colors.colors.white};
@@ -16,6 +22,12 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
+    @media (min-width: 481px) and (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
   p {
     margin-top: -0.5em;
@@ -24,6 +36,12 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
+    @media (min-width: 481px) and (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -33,6 +51,7 @@ export const Button = styled.button`
   background-color: ${colors.colors.purple};
   border-radius: 10px;
   cursor: pointer;
+  width: 254px;
 
   span {
     font-size: 15px;
