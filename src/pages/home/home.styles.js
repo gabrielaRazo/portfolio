@@ -26,3 +26,17 @@ export const Text = styled.div`
     font-size: 20px;
   }
 `;
+
+export const Button = styled.button`
+  padding: 10px;
+  border: 0;
+  background-color: ${colors.colors.purple};
+  border-radius: 10px;
+  cursor: pointer;
+
+  span {
+    font-size: 15px;
+    color: ${colors.colors.white};
+    font-family: 'Quicksand';
+  }
+`;
