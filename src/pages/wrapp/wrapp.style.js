@@ -61,6 +61,7 @@ export const Col = styled.div`
     ${({ lg }) => lg && getWidthStrings(lg)};
   }
   ${(props) => props.collapse && media[props.collapse](`display:none;`)};
+  ${(props) => props.hidden && media[props.hidden](`display:none;`)};
 `;
 
 export const Row = styled.div`

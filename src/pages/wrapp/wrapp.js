@@ -7,17 +7,22 @@ const WrappContent = () => {
   return (
     <>
       <Row>
-        <Col lg={1}></Col>
-        <Col lg={10}>
-          <Col lg={12}>
+        <Col lg={12} collapse="xs" hidden="md">
+          <Contact />
+        </Col>
+        <Col lg={1} md={2}></Col>
+        <Col lg={10} md={8}>
+          <Col lg={12} collapse="xs" hidden="md">
             <Header />
+          </Col>
+          <Col collapse="lg" md={12}>
+            {/*  <Header /> */}
           </Col>
           <Col lg={12}>
             <Home />
           </Col>
         </Col>
-        <Col lg={1}></Col>
-        <Contact />
+        <Col lg={1} md={2}></Col>
       </Row>
     </>
   );
