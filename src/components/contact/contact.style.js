@@ -19,7 +19,7 @@ export const Line = styled.div`
 
 export const Container = styled.div`
   position: fixed;
-  top: 32%;
+  top: 30%;
   opacity: 0.7;
   ${({ left }) => left && `  left: 0;margin-left: 5em;`};
   ${({ rigth }) => rigth && `  right: 0; margin-right: 5em; `};

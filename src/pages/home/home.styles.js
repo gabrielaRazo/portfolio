@@ -15,7 +15,7 @@ export const Text = styled.div`
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 100;
-    font-size: 26px;
+    font-size: 24px;
   }
   p {
     margin-top: -0.5em;

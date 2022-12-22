@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  height: calc(100% - 100px);
+  margin: 50px 50px;
+}
+
+.wrapper .react-logo {
+  width: 300px;
+  height: 300px;
+}
+
+.react-logo__circle,
+.react-logo__ring {
+  transition: ease-out 1.2s;
+  transform-origin: center;
+}
+
+.react-logo__circle {
+  transform: scale(1.3) translate(180px, 108px);
+}
+
+.react-logo__ring--1 {
+  transition: ease-out 0.7s;
+  transition-delay: 2s;
+  transform: scale(0);
+}
+
+.react-logo__ring--2 {
+  transition-delay: 0.7s;
+  transform: rotateZ(60deg);
+}
+
+.react-logo__ring--3 {
+  transition-delay: 1.2s;
+  transform: rotateZ(-60deg);
+}
+
+.wrapper:hover .react-logo__circle {
+  transform: scale(1) translate(0);
+}
+
+.wrapper:hover .react-logo__ring--1 {
+  transform: scale(1);
+}
+
+.wrapper:hover .react-logo__ring--2,
+.wrapper:hover .react-logo__ring--3 {
+  transform: rotateZ(0deg);
+}
+
+.cls-1 {
+  fill: #00d8ff;
+}
+
+.cls-2 {
+  fill: none;
+  stroke: #00d8ff;
+  stroke-miterlimit: 10;
+  stroke-width: 24px;
+}

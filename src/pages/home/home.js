@@ -1,13 +1,22 @@
 import React from 'react';
+import ReactAnimation from '../../components/reactAnimation/animation';
 import { Text } from './home.styles';
+import { Row, Col } from '../../pages/wrapp/wrapp.style';
 const Home = () => {
   return (
     <>
-      <Text>
-        <h4>Hi, I am Gabriela.</h4>
-        <h1>Front End Developer</h1>
-        <p>Specialized in bulding Web App with React and Javascript</p>
-      </Text>
+      <Row>
+        <Col lg={8}>
+          <Text>
+            <h4>Hi, I am Gabriela.</h4>
+            <h1>Front End Developer</h1>
+            <p>Specialized in bulding Web App with React and Javascript</p>
+          </Text>
+        </Col>
+        <Col lg={4}>
+          <ReactAnimation />
+        </Col>
+      </Row>
     </>
   );
 };
