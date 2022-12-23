@@ -8,6 +8,7 @@ export const Icon = styled.svg`
   width: 40px;
   height: 70.23px;
   color: ${colors.colors.purple};
+  cursor: pointer;
 `;
 
 export const Container = styled.div`
