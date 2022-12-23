@@ -45,7 +45,7 @@ export const Center = styled.div`
 `;
 
 export const Col = styled.div`
-  padding: 16px 0;
+  padding: 8px 0;
   ${({ spaced }) => spaced && `margin-left: 0.5em; margin-right: 0.5em`};
 
   @media (max-width: 480px) {
