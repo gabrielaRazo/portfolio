@@ -7,9 +7,8 @@ const Home = () => {
   return (
     <>
       <Row>
-        {/* Web */}
-
         <Col lg={8} md={9} xs={12}>
+          {/* Web */}
           <Text>
             <h4>Hi, I am Gabriela.</h4>
             <h1>Front End Developer</h1>
@@ -25,9 +24,6 @@ const Home = () => {
                 Check my CV
               </span>
             </Button>
-          </Col>
-          <Col lg={4} collapse="xs" hidden="md">
-            <ReactAnimation />
           </Col>
 
           {/* Responsive */}
@@ -46,8 +42,12 @@ const Home = () => {
             </Center>
           </Col>
         </Col>
+        {/* Web */}
+        <Col lg={4} collapse="xs" hidden="md">
+          <ReactAnimation />
+        </Col>
         {/* Space grid Tablet */}
-        <Col md={1} collapse="lg" hidden="xs"></Col>
+        <Col md={1} collapse="lg" hidden="xs" />
         <Col xs={12} md={2} collapse="lg">
           <AnimationResponsive />
         </Col>
