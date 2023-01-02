@@ -2,5 +2,11 @@
   "printWidth": 80,
   "singleQuote": true,
   "tabWidth": 2,
-  "trailingComma": "all"
+  "endOfLine":"auto",
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ]
 }
