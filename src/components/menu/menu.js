@@ -1,12 +1,14 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { StyledMenu } from './menu.style';
 
-const Menu = ({ open, ...props }) => {
-  const isHidden = open ? true : false;
+const Menu = () => {
+  const isMenuOpen = useSelector((state) => state.dasboardReducer.isMenuOpen);
+  const isHidden = isMenuOpen ? true : false;
   const tabIndex = isHidden ? 0 : -1;
 
   return (
-    <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
+    <StyledMenu open={isMenuOpen} aria-hidden={!isHidden}>
       <a href="/" tabIndex={tabIndex}>
         <span>Home</span>
       </a>
