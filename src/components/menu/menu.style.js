@@ -14,18 +14,14 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  width: 300px;
 
   ::before ::after {
     box-sizing: inherit;
   }
-
-  @media (max-width: 576px) {
-    width: 100%;
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    padding: 5rem;
-  }
+  ${({ open }) =>
+    open &&
+    'border-right: solid 1px black;box-shadow: 0 0 50px; transition: 0.3s color;'};
 
   a {
     font-size: 1rem;
@@ -43,6 +39,7 @@ export const StyledMenu = styled.nav`
     @media (min-width: 768px) and (max-width: 1023px) {
       font-size: 1.3rem;
       text-align: center;
+      padding: 1rem;
     }
 
     &:hover {
