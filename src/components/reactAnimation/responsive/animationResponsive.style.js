@@ -11,7 +11,9 @@ export const Container = styled.div`
   width: 250px;
   height: 250px;
   margin: 20px auto 0 auto;
-
+  @media (max-width: 767px) {
+    ${({ isMenuOpen }) => isMenuOpen === true && `visibility:hidden`};
+  }
   display: flex;
   align-items: center;
   justify-content: center;
