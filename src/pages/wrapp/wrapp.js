@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../../components/about/about';
 import Contact from '../../components/contact/contact';
 import Header from '../../layouts/header/header';
 import HeaderResponsive from '../../layouts/header/responsive/headerResponsive';
@@ -22,6 +23,9 @@ const WrappContent = () => {
           <Col lg={12}>
             <Home />
           </Col>
+        </Col>
+        <Col lg={11} md={12} xs={12}>
+          <About />
         </Col>
         <Col lg={1} md={1} xs={1}></Col>
       </Row>
