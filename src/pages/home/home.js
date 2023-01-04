@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Row>
-        <Col lg={8} md={9} xs={12}>
+        <Col lg={8} md={10} xs={12}>
           {/* Web */}
           <Text>
             <h4>Hi, I am Gabriela.</h4>
@@ -48,7 +48,7 @@ const Home = () => {
         </Col>
         {/* Space grid Tablet */}
         <Col md={1} collapse="lg" hidden="xs" />
-        <Col xs={12} md={2} collapse="lg">
+        <Col xs={12} md={1} collapse="lg">
           <AnimationResponsive />
         </Col>
       </Row>

@@ -4,6 +4,7 @@ import * as colors from '../../stylesheet/Colors.style';
 export const StyledIcon = styled.svg`
   width: 25px;
   height: 25px;
+  padding: 2px;
   a {
     color: ${colors.colors.salmon};
   }

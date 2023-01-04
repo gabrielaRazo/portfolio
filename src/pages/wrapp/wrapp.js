@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../../components/about/about';
+import AboutResponsive from '../../components/about/aboutResponsive/aboutResponsive';
 import Contact from '../../components/contact/contact';
 import Header from '../../layouts/header/header';
 import HeaderResponsive from '../../layouts/header/responsive/headerResponsive';
@@ -9,6 +10,7 @@ const WrappContent = () => {
   return (
     <>
       <Row>
+        {/* Just for Web */}
         <Col lg={12} collapse="xs" hidden="md">
           <Contact />
         </Col>
@@ -20,11 +22,14 @@ const WrappContent = () => {
           <Col collapse="lg" md={12} xs={12}>
             <HeaderResponsive />
           </Col>
-          <Col lg={12}>
+          <Col lg={12} md={12} xs={12}>
             <Home />
           </Col>
         </Col>
-        <Col lg={11} md={12} xs={12}>
+        <Col collapse="lg" md={12} xs={12}>
+          <AboutResponsive />
+        </Col>
+        <Col lg={11} collapse="xs" hidden="md">
           <About />
         </Col>
         <Col lg={1} md={1} xs={1}></Col>

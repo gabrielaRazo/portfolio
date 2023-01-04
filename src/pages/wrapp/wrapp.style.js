@@ -48,10 +48,10 @@ export const Col = styled.div`
   padding: 8px 0;
   ${({ spaced }) => spaced && `margin-left: 0.5em; margin-right: 0.5em`};
 
-  @media (max-width: 480px) {
+  @media (max-width: 420px) {
     ${({ xs }) => (xs ? getWidthStrings(xs) : 'width: 100%')};
   }
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 420px) and (max-width: 768px) {
     ${({ sm }) => sm && getWidthStrings(sm)};
   }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -62,6 +62,36 @@ export const Col = styled.div`
   }
   ${(props) => props.collapse && media[props.collapse](`display:none;`)};
   ${(props) => props.hidden && media[props.hidden](`display:none;`)};
+`;
+
+export const SpaceLeft = styled.div`
+  @media (max-width: 376px) {
+    margin-left: ${({ xs }) => xs + `em`};
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    margin-left: ${({ sm }) => sm + `em`};
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin-left: ${({ md }) => md + `em`};
+  }
+  @media (min-width: 1024px) and (max-width: 2570px) {
+    margin-left: ${({ lg }) => lg + `em`};
+  }
+`;
+
+export const SpaceRigth = styled.div`
+  @media (max-width: 376px) {
+    margin-right: ${({ xs }) => xs + `em`};
+  }
+  @media (min-width: 376px) and (max-width: 768px) {
+    margin-right: ${({ sm }) => sm + `em`};
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin-right: ${({ md }) => md + `em`};
+  }
+  @media (min-width: 1024px) and (max-width: 2570px) {
+    margin-right: ${({ lg }) => lg + `em`};
+  }
 `;
 
 export const Row = styled.div`
