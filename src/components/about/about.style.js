@@ -22,6 +22,9 @@ export const Text = styled.div`
     font-size: 1.5rem;
   }
   font-size: 0.9rem;
+  p {
+    margin-top: -0.8em;
+  }
 `;
 
 export const Background = styled.div`
@@ -36,6 +39,8 @@ export const Background = styled.div`
 `;
 
 export const ContainerIcons = styled.div`
+  margin-top: -1em;
+  margin-bottom: 1em;
   svg {
     color: ${colors.colors.pink};
   }

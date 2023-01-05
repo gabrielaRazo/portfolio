@@ -68,7 +68,7 @@ export const SpaceLeft = styled.div`
   @media (max-width: 376px) {
     margin-left: ${({ xs }) => xs + `em`};
   }
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 376px) and (max-width: 767px) {
     margin-left: ${({ sm }) => sm + `em`};
   }
   @media (min-width: 768px) and (max-width: 1023px) {
