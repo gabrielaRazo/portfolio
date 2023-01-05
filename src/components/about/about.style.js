@@ -23,7 +23,7 @@ export const Text = styled.div`
   }
   font-size: 0.9rem;
   p {
-    margin-top: -0.8em;
+    margin-top: -0.5em;
   }
 `;
 
@@ -39,12 +39,35 @@ export const Background = styled.div`
 `;
 
 export const ContainerIcons = styled.div`
-  margin-top: -1em;
-  margin-bottom: 1em;
+  margin-top: -2em;
   svg {
     color: ${colors.colors.pink};
   }
   @media (min-width: 360px) and (max-width: 420px) {
     margin-left: 1em;
+  }
+`;
+
+export const Icon = styled.div`
+  display: inline-block;
+  svg {
+    width: 25px;
+    height: 25px;
+    color: ${colors.colors.pink};
+    margin-left: 10px;
+    margin-bottom: -1px;
+    @media (min-width: 360px) and (max-width: 420px) {
+      margin-bottom: -2px;
+    }
+  }
+`;
+
+export const Subtitle = styled.div`
+  font-size: 1.7rem;
+  a {
+    color: ${colors.colors.pink};
+  }
+  &:hover {
+    text-decoration: underline;
   }
 `;

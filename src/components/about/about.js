@@ -1,12 +1,27 @@
 import React from 'react';
 import { Col, Row, SpaceLeft } from '../../pages/wrapp/wrapp.style';
 import avatar from '../../assets/images/avataaars__1___1_-removebg-preview.png';
-import { Img, Text, Title, Background, ContainerIcons } from './about.style';
-import { faSpotify, faReact } from '@fortawesome/free-brands-svg-icons';
+import moment from 'moment';
+
+import {
+  Img,
+  Text,
+  Title,
+  Background,
+  ContainerIcons,
+  Icon,
+  Subtitle,
+} from './about.style';
+import {
+  faSpotify,
+  faReact,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
 import { faDog, faDumbbell, faBook } from '@fortawesome/free-solid-svg-icons';
 import { StyledIcon } from '../contact/contact.style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
+  const yearsExperience = moment().diff('2020-04-01', 'years', true).toFixed(1);
   return (
     <>
       <Row centered>
@@ -31,14 +46,13 @@ const About = () => {
                 <Col lg={12} md={12} xs={12}>
                   <Text>
                     <p>
-                      I am a Frontend Developer with 2.8 years of professional
-                      experience.
+                      I am a Frontend Developer with {yearsExperience} years of
+                      professional experience.
                     </p>
                     <p>
                       I enjoy researching, designing, prototyping and coding
                       ecommerce as well as web Apps.
                     </p>
-                    <br />
                     <p>
                       When I am not coding. I am either playing videogames,
                       doing crossfit, reading, lightening music, or spending
@@ -83,6 +97,29 @@ const About = () => {
                   expand my skills, and grow.
                 </p>
               </Text>
+              <Row centered>
+                <Col lg={5} md={5} xs={2} sm={4}></Col>
+                <Col lg={7} md={7} xs={8} sm={8}>
+                  <Subtitle>
+                    <a
+                      href="mailto:gabrielarazoroldan@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Let's chat!
+                    </a>
+                    <Icon>
+                      <a
+                        href="https://www.linkedin.com/in/gabriela97/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                      </a>
+                    </Icon>
+                  </Subtitle>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Background>
