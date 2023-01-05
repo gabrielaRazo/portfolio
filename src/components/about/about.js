@@ -101,13 +101,6 @@ const About = () => {
                 <Col lg={5} md={5} xs={2} sm={4}></Col>
                 <Col lg={7} md={7} xs={8} sm={8}>
                   <Subtitle>
-                    <a
-                      href="mailto:gabrielarazoroldan@gmail.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Let's chat!
-                    </a>
                     <Icon>
                       <a
                         href="https://www.linkedin.com/in/gabriela97/"
@@ -117,6 +110,13 @@ const About = () => {
                         <FontAwesomeIcon icon={faLinkedinIn} />
                       </a>
                     </Icon>
+                    <a
+                      href="mailto:gabrielarazoroldan@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Let's chat!
+                    </a>
                   </Subtitle>
                 </Col>
               </Row>

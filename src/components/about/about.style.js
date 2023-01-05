@@ -50,15 +50,17 @@ export const ContainerIcons = styled.div`
 
 export const Icon = styled.div`
   display: inline-block;
+  text-align: center;
+  background-color: ${colors.colors.pink};
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
   svg {
     width: 25px;
     height: 25px;
-    color: ${colors.colors.pink};
-    margin-left: 10px;
-    margin-bottom: -1px;
-    @media (min-width: 360px) and (max-width: 420px) {
-      margin-bottom: -2px;
-    }
+    padding-left: 1px;
+    color: ${colors.colors.black};
   }
 `;
 
