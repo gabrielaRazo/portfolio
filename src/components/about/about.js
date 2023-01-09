@@ -1,5 +1,10 @@
 import React from 'react';
-import { Col, Row, SpaceLeft } from '../../pages/wrapp/wrapp.style';
+import {
+  Col,
+  Row,
+  SpaceBottom,
+  SpaceLeft,
+} from '../../pages/wrapp/wrapp.style';
 import avatar from '../../assets/images/avataaars__1___1_-removebg-preview.png';
 import moment from 'moment';
 
@@ -25,11 +30,12 @@ const About = () => {
   return (
     <>
       <Row centered>
-        <Col sm={12} xs={12}></Col>
-        <Col lg={4} md={6} sm={12} xs={12}>
+        <Col lg={2}></Col>
+        <Col lg={7} md={6} sm={12} xs={12}>
           <Title>Me, Myself, and I</Title>
         </Col>
       </Row>
+      <SpaceBottom xl={-2} md={-1.5} />
       <Col lg={12} md={12} xs={12}>
         <Background>
           <Row centered>
@@ -62,11 +68,13 @@ const About = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={10}>
+            <Col lg={2}></Col>
+            <Col lg={9}>
               <Text>
                 <Row centered>
                   <Col lg={5} md={3} collapse="xs"></Col>
                   <Col lg={7} md={6} xs={7} sm={5}>
+                    <SpaceBottom lg={1} />
                     <ContainerIcons>
                       <StyledIcon>
                         <a
@@ -90,12 +98,15 @@ const About = () => {
                         <FontAwesomeIcon icon={faBook} />
                       </StyledIcon>
                     </ContainerIcons>
+                    <SpaceBottom xl={1} lg={1} md={1} />
                   </Col>
                 </Row>
-                <p>
-                  I am open to Job opportunities were I can play a part in,
-                  expand my skills, and grow.
-                </p>
+                <SpaceLeft lg={0.6}>
+                  <p>
+                    I am open to Job opportunities were I can play a part in,
+                    expand my skills, and grow.
+                  </p>
+                </SpaceLeft>
               </Text>
               <Row centered>
                 <Col lg={5} md={5} xs={2} sm={4}></Col>

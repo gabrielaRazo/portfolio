@@ -9,17 +9,25 @@ export const Img = styled.img`
 export const Title = styled.h1`
   color: ${colors.colors.purple};
   font-family: 'Playfair Display';
-  font-size: 30px;
+  @media (min-width: 1200px) and (max-width: 2570px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  font-size: 2.5rem;
   font-weight: 100;
   text-align: center;
-  font-size: 35px;
 `;
 
 export const Text = styled.div`
   color: white;
   text-align: left;
-  @media (min-width: 1024px) and (max-width: 2570px) {
-    font-size: 1.5rem;
+  @media (min-width: 1500px) {
+    font-size: 1.7rem;
+  }
+  @media (min-width: 1024px) and (max-width: 1450px) {
+    font-size: 18px;
   }
   font-size: 0.9rem;
   p {
