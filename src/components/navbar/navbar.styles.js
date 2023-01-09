@@ -5,8 +5,9 @@ export const Tag = styled.div`
   margin-top: 1.7em;
   width: 100%;
   color: ${colors.colors.salmon};
-  opacity: 0.7;
+  opacity: 0.9;
   text-align: center;
+  font-size: 1.1rem;
   cursor: pointer;
   span {
     &:hover {

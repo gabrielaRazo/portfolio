@@ -12,6 +12,9 @@ export const Text = styled.div`
     @media (min-width: 481px) and (max-width: 768px) {
       text-align: center;
     }
+    @media (min-width: 1200px) and (max-width: 2570px) {
+      font-size: 3rem;
+    }
     @media (max-width: 480px) {
       text-align: center;
     }
@@ -25,6 +28,9 @@ export const Text = styled.div`
     @media (min-width: 481px) and (max-width: 768px) {
       text-align: center;
     }
+    @media (min-width: 1200px) and (max-width: 2570px) {
+      font-size: 2rem;
+    }
     @media (max-width: 480px) {
       text-align: center;
     }
@@ -36,6 +42,9 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
+    @media (min-width: 1200px) and (max-width: 2570px) {
+      font-size: 1.5rem;
+    }
     @media (min-width: 481px) and (max-width: 768px) {
       text-align: center;
     }
@@ -57,5 +66,8 @@ export const Button = styled.button`
     font-size: 15px;
     color: ${colors.colors.white};
     font-family: 'Quicksand';
+    @media (min-width: 1200px) and (max-width: 2570px) {
+      font-size: 1.2rem;
+    }
   }
 `;

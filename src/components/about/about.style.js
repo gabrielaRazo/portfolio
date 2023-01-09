@@ -27,7 +27,7 @@ export const Text = styled.div`
     font-size: 1.7rem;
   }
   @media (min-width: 1024px) and (max-width: 1450px) {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   font-size: 0.9rem;
   p {
