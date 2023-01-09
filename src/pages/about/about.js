@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Col,
-  Row,
-  SpaceBottom,
-  SpaceLeft,
-} from '../../pages/wrapp/wrapp.style';
+import { Col, Row, SpaceBottom, SpaceLeft } from '../wrapp/wrapp.style';
 import avatar from '../../assets/images/avataaars__1___1_-removebg-preview.png';
 import moment from 'moment';
 
@@ -23,7 +18,7 @@ import {
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDog, faDumbbell, faBook } from '@fortawesome/free-solid-svg-icons';
-import { StyledIcon } from '../contact/contact.style';
+import { StyledIcon } from '../../components/contact/contact.style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
   const yearsExperience = moment().diff('2020-04-01', 'years', true).toFixed(1);

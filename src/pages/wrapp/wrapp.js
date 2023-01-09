@@ -1,5 +1,5 @@
 import React from 'react';
-import About from '../../components/about/about';
+import About from '../about/about';
 import Contact from '../../components/contact/contact';
 import Header from '../../layouts/header/header';
 import HeaderResponsive from '../../layouts/header/responsive/headerResponsive';
