@@ -94,6 +94,10 @@ export const SpaceRigth = styled.div`
   }
 `;
 
+export const Padding = styled.div`
+  padding: 10px 6% 0px;
+`;
+
 export const SpaceBottom = styled.div`
   @media (max-width: 376px) {
     margin-bottom: ${({ xs }) => xs + `em`};

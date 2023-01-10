@@ -51,12 +51,12 @@ const About = () => {
                       professional experience.
                     </p>
                     <p>
-                      I enjoy researching, designing, prototyping and coding
-                      ecommerce as well as web Apps.
+                      I enjoy researching, designing, prototyping, and coding
+                      e-commerce besides web Apps.
                     </p>
                     <p>
-                      When I am not coding. I am either playing videogames,
-                      doing crossfit, reading, lightening music, or spending
+                      When I am not coding, I am either playing video games,
+                      doing CrossFit, reading, lightening to music, or spending
                       quality time with my dog.
                     </p>
                   </Text>
@@ -69,7 +69,7 @@ const About = () => {
                 <Row centered>
                   <Col lg={5} md={3} collapse="xs"></Col>
                   <Col lg={7} md={6} xs={7} sm={5}>
-                    <SpaceBottom lg={1} />
+                    <br />
                     <ContainerIcons>
                       <StyledIcon>
                         <a
@@ -98,7 +98,7 @@ const About = () => {
                 </Row>
                 <SpaceLeft lg={0.6}>
                   <p>
-                    I am open to Job opportunities were I can play a part in,
+                    I am open to Job opportunities where I can play a part,
                     expand my skills, and grow.
                   </p>
                 </SpaceLeft>
@@ -130,6 +130,9 @@ const About = () => {
           </Row>
         </Background>
       </Col>
+      <br />
+      <br />
+      <br />
     </>
   );
 };
