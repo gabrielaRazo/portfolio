@@ -48,7 +48,7 @@ const Home = () => {
         </Col>
         {/* Space grid Tablet */}
         <Col md={1} collapse="lg" hidden="xs" />
-        <Col xs={12} md={1} collapse="lg">
+        <Col xs={12} sm={12} md={1} collapse="lg">
           <AnimationResponsive />
         </Col>
       </Row>

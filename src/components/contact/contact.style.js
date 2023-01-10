@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
 export const StyledIcon = styled.svg`
-  width: 25px;
-  height: 25px;
-  padding: 2px;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
   a {
     color: ${colors.colors.salmon};
   }
@@ -13,7 +13,7 @@ export const StyledIcon = styled.svg`
 export const Line = styled.div`
   border-left: 1px solid ${colors.colors.salmon};
   height: 100px;
-  margin-left: 0.7em;
+  margin-left: 1em;
   ${({ up }) => up && `  margin-top: 1em;`};
   ${({ down }) => down && `  margin-bottom: 1em; `};
 `;
