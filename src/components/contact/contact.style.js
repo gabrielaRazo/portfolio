@@ -20,6 +20,7 @@ export const Line = styled.div`
 
 export const Container = styled.div`
   position: fixed;
+  z-index: 2;
   top: 30%;
   opacity: 0.7;
   ${({ left }) => left && `  left: 0;margin-left: 5em;`};
