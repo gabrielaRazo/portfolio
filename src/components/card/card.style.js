@@ -6,6 +6,6 @@ export const Card = styled.div`
   margin-top: 12em;
   position: absolute;
   height: 100%;
-  width: 70%;
+  width: 75%;
   border-radius: 10px;
 `;

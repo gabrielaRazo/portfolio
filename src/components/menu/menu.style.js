@@ -8,13 +8,14 @@ export const StyledMenu = styled.nav`
   position: fixed;
   background-color: ${colors.colors.purple};
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-  height: 100vh;
+  height: 103vh;
   text-align: left;
   scroll-behavior: unset;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
-  width: 300px;
+  width: 310px;
+  z-index: 2;
 
   ::before ::after {
     box-sizing: inherit;
