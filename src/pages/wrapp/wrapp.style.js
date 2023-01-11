@@ -62,6 +62,7 @@ export const Col = styled.div`
   }
   ${(props) => props.collapse && media[props.collapse](`display:none;`)};
   ${(props) => props.hidden && media[props.hidden](`display:none;`)};
+  ${(props) => props.none && media[props.none](`display:none;`)};
 `;
 
 export const SpaceLeft = styled.div`

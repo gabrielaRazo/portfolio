@@ -1,11 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Col, Row, SpaceBottom } from '../../pages/wrapp/wrapp.style';
+import { Col, Row } from '../../pages/wrapp/wrapp.style';
 import {
   faLaptopCode,
   faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
-import { Card, Container, ContainerDivider, MainIcon } from './card.style';
+import {
+  Card,
+  ColorWrap,
+  ContainerDivider,
+  MainIcon,
+  CardRelative,
+} from './card.style';
 import Languages from '../languages/languages';
 import DesignTools from '../designTools/designTools';
 import DevTools from '../devTools/devTools';
@@ -13,7 +19,7 @@ const CardWrap = () => {
   return (
     <>
       <Card>
-        <Container>
+        <ColorWrap>
           <Row>
             <Col xs={12} sm={12} md={12} lg={6}>
               <Row centered>
@@ -42,7 +48,7 @@ const CardWrap = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={12} sm={12} md={12} lg={6}>
+            <Col collapse="xs" none="sm" hidden="md" lg={6}>
               <ContainerDivider>
                 <Row centered>
                   <Col xs={2} sm={2} md={1} lg={1}>
@@ -54,7 +60,21 @@ const CardWrap = () => {
               </ContainerDivider>
             </Col>
           </Row>
-        </Container>
+        </ColorWrap>
+        <Col collapse="lg" xs={12} sm={12} md={12}>
+          <CardRelative>
+            <ColorWrap>
+              <Row centered>
+                <Col xs={2} sm={2} md={1} lg={1}>
+                  <MainIcon>
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                  </MainIcon>
+                </Col>
+              </Row>
+            </ColorWrap>
+          </CardRelative>
+        </Col>
+        <br />
       </Card>
     </>
   );
