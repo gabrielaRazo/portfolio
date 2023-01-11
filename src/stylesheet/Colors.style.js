@@ -7,4 +7,6 @@ export const colors = {
   white: '#FFFFFF',
   black: '#000000',
   violet: '#753FBF',
+  ligthGray: '#d4d4d4',
+  ligherGray: '#DDDDDD',
 };

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
 export const Card = styled.div`
-  background-color: ${colors.colors.white};
   margin-top: 12em;
   position: absolute;
   height: 100%;
@@ -10,6 +9,11 @@ export const Card = styled.div`
     width: 70%;
   }
   width: 75%;
+`;
+
+export const Container = styled.div`
+  background-color: ${colors.colors.white};
+  position: relative;
   border-radius: 10px;
 `;
 
@@ -18,18 +22,18 @@ export const MainIcon = styled.div`
   flex-flow: row wrap;
   background-color: ${colors.colors.violet};
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   align-items: center;
   justify-content: center;
   svg {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 `;
 
-export const Divider = styled.div`
-  border-left: 1px solid #d4d4d4;
+export const ContainerDivider = styled.div`
+  border-left: 2px solid ${colors.colors.ligthGray};
   margin-top: -5px;
-  height: 98vh;
+  height: 100%;
 `;

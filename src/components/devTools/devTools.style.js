@@ -16,6 +16,10 @@ export const IconCards = styled.div`
   height: 60px;
   align-items: center;
   justify-content: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const Horizontal = styled.div`

@@ -23,6 +23,7 @@ export const Title = styled.h1`
 export const Text = styled.div`
   color: white;
   text-align: left;
+  font-weight: 100;
   @media (min-width: 1500px) {
     font-size: 1.3rem;
   }
