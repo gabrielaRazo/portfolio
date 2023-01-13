@@ -8,7 +8,7 @@ export const Img = styled.img`
 
 export const Title = styled.h1`
   color: ${colors.colors.purple};
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   @media (min-width: 1200px) and (max-width: 2570px) {
     font-size: 2.5rem;
   }
@@ -23,14 +23,12 @@ export const Title = styled.h1`
 export const Text = styled.div`
   color: white;
   text-align: left;
+  font-family: 'Yantramanav', sans-serif;
   font-weight: 100;
-  @media (min-width: 1500px) {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
+  @media (max-width: 700px) {
+    font-size: 0.9rem;
   }
-  @media (min-width: 1024px) and (max-width: 1450px) {
-    font-size: 1.1rem;
-  }
-  font-size: 0.9rem;
   p {
     margin-top: -0.5em;
   }

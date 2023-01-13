@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 body {
   background-color: #212226;
-  font-family: 'Quicksand', sans-serif;
-
-  font-weight: 100;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 300;
 }

@@ -6,6 +6,7 @@ export const Tag = styled.div`
   width: 100%;
   color: ${colors.colors.salmon};
   opacity: 0.9;
+  font-family: 'Yantramanav', sans-serif;
   text-align: center;
   font-size: 1.1rem;
   cursor: pointer;

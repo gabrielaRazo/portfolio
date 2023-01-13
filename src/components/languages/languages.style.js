@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
 export const Title = styled.h1`
-  @media (max-width: 768px) {
-    font-size: 1.1rem;
+  @media (min-width: 1300px) {
+    font-size: 1.55rem;
   }
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-family: 'Playfair Display';
   font-weight: 100;
 `;
@@ -31,7 +31,7 @@ export const Horizontal = styled.div`
 `;
 
 export const Text = styled.p`
-  font-family: 'Quicksand';
+  font-family: 'Yantramanav', sans-serif;
   display: grid;
   width: 154px;
   text-align: center;

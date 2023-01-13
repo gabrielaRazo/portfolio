@@ -6,12 +6,12 @@ export const StyledIcon = styled.svg`
   height: 30px;
   padding: 1px;
   a {
-    color: ${colors.colors.salmon};
+    color: ${colors.colors.pink};
   }
 `;
 
 export const Line = styled.div`
-  border-left: 1px solid ${colors.colors.salmon};
+  border-left: 1px solid ${colors.colors.pink};
   height: 100px;
   margin-left: 1em;
   ${({ up }) => up && `  margin-top: 1em;`};

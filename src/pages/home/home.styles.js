@@ -5,7 +5,7 @@ export const Text = styled.div`
   h1 {
     margin-top: -0.7em;
     color: ${colors.colors.purple};
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 100;
     font-size: 45px;
@@ -21,7 +21,7 @@ export const Text = styled.div`
   }
   h4 {
     color: ${colors.colors.white};
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
@@ -38,9 +38,6 @@ export const Text = styled.div`
   p {
     margin-top: -0.5em;
     color: ${colors.colors.darkGray};
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 100;
     font-size: 20px;
     @media (min-width: 1200px) and (max-width: 2570px) {
       font-size: 1.5rem;
@@ -59,13 +56,14 @@ export const Button = styled.button`
   border: 0;
   background-color: ${colors.colors.purple};
   border-radius: 10px;
+  font-weight: 100;
   cursor: pointer;
   width: 254px;
 
   span {
     font-size: 15px;
     color: ${colors.colors.white};
-    font-family: 'Quicksand';
+    font-family: 'Yantramanav', sans-serif;
     @media (min-width: 1200px) and (max-width: 2570px) {
       font-size: 1.2rem;
     }

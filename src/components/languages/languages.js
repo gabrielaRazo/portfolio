@@ -8,13 +8,12 @@ import {
   Title,
   ContainerResponsive,
 } from './languages.style';
+import { skills } from '../../mock/mockSkills';
 
-import { languages } from '../../mock/mockLanguages';
 const Languages = () => {
-  console.log('languages', languages);
   return (
     <>
-      {languages.map((type) => (
+      {skills.map((type) => (
         <>
           <Row centered>
             <Col lg={4} md={3} sm={6} xs={6}>
@@ -39,7 +38,7 @@ const Languages = () => {
                           height={item.height}
                         />
                       ) : (
-                        <img src={item.imgUrl} />
+                        <img alt={item.title} src={item.imgUrl} />
                       )}
                     </IconCards>
                     <Text>{item.title}</Text>

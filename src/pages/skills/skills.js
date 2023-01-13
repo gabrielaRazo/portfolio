@@ -1,6 +1,6 @@
 import React from 'react';
 import CardWrap from '../../components/card/card';
-import { Row, Col, Center } from '../../pages/wrapp/wrapp.style';
+import { Row, Col } from '../../pages/wrapp/wrapp.style';
 import { Background } from './skills.style';
 const Skills = () => {
   return (

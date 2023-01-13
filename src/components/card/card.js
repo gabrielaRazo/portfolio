@@ -13,6 +13,7 @@ import {
   CardRelative,
 } from './card.style';
 import Languages from '../languages/languages';
+import Certification from '../certification/certification';
 const CardWrap = () => {
   return (
     <>
@@ -43,6 +44,12 @@ const CardWrap = () => {
                     </MainIcon>
                   </Col>
                 </Row>
+                <Row>
+                  <Col xs={1} sm={1} md={1} lg={1}></Col>
+                  <Col xs={11} sm={11} md={11} lg={11}>
+                    <Certification />
+                  </Col>
+                </Row>
               </ContainerDivider>
             </Col>
           </Row>
@@ -55,6 +62,12 @@ const CardWrap = () => {
                   <MainIcon>
                     <FontAwesomeIcon icon={faGraduationCap} />
                   </MainIcon>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={1} sm={1} md={1} lg={1}></Col>
+                <Col xs={11} sm={11} md={11} lg={11}>
+                  <Certification />
                 </Col>
               </Row>
             </ColorWrap>
