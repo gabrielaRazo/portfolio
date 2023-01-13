@@ -13,8 +13,6 @@ import {
   CardRelative,
 } from './card.style';
 import Languages from '../languages/languages';
-import DesignTools from '../designTools/designTools';
-import DevTools from '../devTools/devTools';
 const CardWrap = () => {
   return (
     <>
@@ -33,18 +31,6 @@ const CardWrap = () => {
                 <Col xs={1} sm={1} md={1} lg={1}></Col>
                 <Col xs={11} sm={11} md={11} lg={11}>
                   <Languages />
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={1} sm={1} md={1} lg={1}></Col>
-                <Col xs={11} sm={11} md={11} lg={11}>
-                  <DevTools />
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={1} sm={1} md={1} lg={1}></Col>
-                <Col xs={11} sm={11} md={11} lg={11}>
-                  <DesignTools />
                 </Col>
               </Row>
             </Col>

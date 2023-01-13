@@ -7,69 +7,49 @@ import {
   Text,
   Title,
   ContainerResponsive,
-} from '../card/card.style';
+} from './languages.style';
+
+import { languages } from '../../mock/mockLanguages';
 const Languages = () => {
+  console.log('languages', languages);
   return (
     <>
-      <Row centered>
-        <Col lg={4} md={3} sm={6} xs={6}>
-          <Title>Languages</Title>
-        </Col>
-        <Col lg={8} md={9} sm={6} xs={6}>
-          <Horizontal />
-        </Col>
-      </Row>
+      {languages.map((type) => (
+        <>
+          <Row centered>
+            <Col lg={4} md={3} sm={6} xs={6}>
+              <Title>{type.title}</Title>
+            </Col>
+            <Col lg={8} md={9} sm={6} xs={6}>
+              <Horizontal />
+            </Col>
+          </Row>
 
-      <Row centered>
-        <Col lg={3} md={3} sm={5} xs={5}>
-          <ContainerResponsive>
-            <Row centered>
-              <IconCards>
-                <Icon
-                  icon="vscode-icons:file-type-html"
-                  width="40"
-                  height="40"
-                />
-              </IconCards>
-              <Text>HTML</Text>
-            </Row>
-          </ContainerResponsive>
-        </Col>
-        <Col lg={3} md={3} sm={5} xs={5}>
-          <ContainerResponsive>
-            <Row centered>
-              <IconCards>
-                <Icon icon="logos:javascript" width="35" height="35" />
-              </IconCards>
-              <Text>Javascript</Text>
-            </Row>
-          </ContainerResponsive>
-        </Col>
-        <Col lg={3} md={3} sm={5} xs={5}>
-          <ContainerResponsive>
-            <Row centered>
-              <IconCards>
-                <Icon
-                  icon="vscode-icons:file-type-css"
-                  width="40"
-                  height="40"
-                />
-              </IconCards>
-              <Text>CSS</Text>
-            </Row>
-          </ContainerResponsive>
-        </Col>
-        <Col lg={3} md={3} sm={5} xs={5}>
-          <ContainerResponsive>
-            <Row centered>
-              <IconCards>
-                <Icon icon="bi:git" color="#f1502f" width="40" height="40" />
-              </IconCards>
-              <Text>Git</Text>
-            </Row>
-          </ContainerResponsive>
-        </Col>
-      </Row>
+          <Row centered>
+            {type.icons.map((item) => (
+              <Col lg={3} md={3} sm={5} xs={5}>
+                <ContainerResponsive>
+                  <Row centered>
+                    <IconCards>
+                      {item.icon === true ? (
+                        <Icon
+                          icon={item.url}
+                          color={item.color}
+                          width={item.width}
+                          height={item.height}
+                        />
+                      ) : (
+                        <img src={item.imgUrl} />
+                      )}
+                    </IconCards>
+                    <Text>{item.title}</Text>
+                  </Row>
+                </ContainerResponsive>
+              </Col>
+            ))}
+          </Row>
+        </>
+      ))}
     </>
   );
 };
