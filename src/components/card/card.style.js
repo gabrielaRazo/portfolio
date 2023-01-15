@@ -5,14 +5,19 @@ export const Card = styled.div`
   margin-top: 8em;
   position: absolute;
   height: 100%;
-  @media (min-width: 1024px) and (max-width: 2570px) {
-    width: 70%;
-    margin-top: 10em;
-  }
-  @media (max-width: 376px) {
+  @media (max-width: 420px) {
     width: 75%;
   }
-  width: 65%;
+  @media (min-width: 420px) and (max-width: 768px) {
+    width: 78%;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 75%;
+  }
+  @media (min-width: 1024px) and (max-width: 2570px) {
+    margin-top: 10em;
+    width: 70%;
+  }
 `;
 
 export const MainIcon = styled.div`

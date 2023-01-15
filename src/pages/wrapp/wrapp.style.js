@@ -46,12 +46,12 @@ export const Center = styled.div`
 
 export const Col = styled.div`
   padding: 8px 0;
-  ${({ spaced }) => spaced && `margin-left: 0.5em; margin-right: 0.5em`};
+  ${({ space }) => space && `padding-left: 0.5em; padding-right: 0.5em`};
 
   @media (max-width: 420px) {
     ${({ xs }) => (xs ? getWidthStrings(xs) : 'width: 100%')};
   }
-  @media (min-width: 420px) and (max-width: 768px) {
+  @media (min-width: 420px) and (max-width: 767px) {
     ${({ sm }) => sm && getWidthStrings(sm)};
   }
   @media (min-width: 768px) and (max-width: 1023px) {

@@ -18,14 +18,14 @@ export const certification = [
     iconDiploma: {
       url: 'wpf:diploma-1',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     iconLink: {
       url: 'mdi:link-variant',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     tags: [
       { title: 'HTML' },
@@ -34,6 +34,17 @@ export const certification = [
       { title: 'Github' },
     ],
     iconProject: IconPetIt,
+    iconProject: {
+      url: IconPetIt,
+      link: 'https://petit-project.netlify.app',
+    },
+    iconGithub: {
+      url: 'uiw:github',
+      color: '#d991b9',
+      width: '18',
+      height: '18',
+      link: 'https://github.com/gabrielaRazo/PetIt',
+    },
   },
   {
     title: 'Women in Leadership Bootcamp',
@@ -48,14 +59,14 @@ export const certification = [
     iconDiploma: {
       url: 'wpf:diploma-1',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     iconLink: {
       url: 'mdi:link-variant',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     tags: [],
     iconProject: '',
@@ -68,19 +79,19 @@ export const certification = [
     text: '4-week Bootcamp where I developed a single-page App that use the NASA API. Its purpose is to create a mockup that simulates how the API is being called. Also, test the functionality of everything inside the page.',
     url: {
       title: 'academy.wizeline.com',
-      url: 'https://academy.wizeline.com/course/women-in-leadership-bootcamp-q3-2022/',
+      url: 'https://academy.wizeline.com/course/react-testing-bootcamp/',
     },
     iconDiploma: {
       url: 'wpf:diploma-1',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     iconLink: {
       url: 'mdi:link-variant',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     tags: [
       { title: 'React' },
@@ -90,7 +101,17 @@ export const certification = [
       { title: 'Jest' },
       { title: 'React Testing Library' },
     ],
-    iconProject: IconNasa,
+    iconProject: {
+      url: IconNasa,
+      link: 'https://nasa-api-react-test.netlify.app',
+    },
+    iconGithub: {
+      url: 'uiw:github',
+      color: '#d991b9',
+      width: '18',
+      height: '18',
+      link: 'https://github.com/gabrielaRazo/react-testing-bootcamp-cp-2022',
+    },
   },
   {
     title: 'React Hooks Bootcamp',
@@ -100,19 +121,19 @@ export const certification = [
     text: '4-week Bootcamp where I developed as a final project e-commerce using integrated APIs to show furniture and its categories. The purpose was to create a unique design with all you learned in the course.',
     url: {
       title: 'academy.wizeline.com',
-      url: 'https://academy.wizeline.com/course/women-in-leadership-bootcamp-q3-2022/',
+      url: 'https://academy.wizeline.com/course/react-bootcamp-4/',
     },
     iconDiploma: {
       url: 'wpf:diploma-1',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     iconLink: {
       url: 'mdi:link-variant',
       color: '#d991b9',
-      width: '15',
-      height: '15',
+      width: '18',
+      height: '18',
     },
     tags: [
       { title: 'React' },
@@ -122,6 +143,16 @@ export const certification = [
       { title: 'Hooks' },
       { title: 'React Testing Library' },
     ],
-    iconProject: IconEccomerce,
+    iconProject: {
+      url: IconEccomerce,
+      link: 'https://eccomerce-project-react.netlify.app',
+    },
+    iconGithub: {
+      url: 'uiw:github',
+      color: '#d991b9',
+      width: '18',
+      height: '18',
+      link: 'https://github.com/gabrielaRazo/2022React-Bootcamp-CapstoneProject',
+    },
   },
 ];

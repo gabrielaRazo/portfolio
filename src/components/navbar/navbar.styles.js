@@ -4,7 +4,7 @@ import * as colors from '../../stylesheet/Colors.style';
 export const Tag = styled.div`
   margin-top: 1.7em;
   width: 100%;
-  color: ${colors.colors.salmon};
+  color: ${colors.colors.pink};
   opacity: 0.9;
   font-family: 'Yantramanav', sans-serif;
   text-align: center;

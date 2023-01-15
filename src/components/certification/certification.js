@@ -11,25 +11,22 @@ import {
   TitleBody,
   TitleCard,
 } from './certification.style';
-import IconGeneration from '../../assets/icons/generation.png';
-import IconPetIt from '../../assets/icons/petit.png';
 import { certification } from '../../mock/mockCertifications';
 const Certification = () => {
-  console.log('certification', certification);
   return (
     <>
-      {certification.map((type) => (
+      {certification.map((item) => (
         <>
           <Row>
             <Col lg={11} md={11} sm={11} xs={11}>
               <TitleCard>
                 <Row centered>
                   <Col lg={8} md={9} sm={11} xs={11}>
-                    <Title>{type.title}</Title>
+                    <Title>{item.title}</Title>
                   </Col>
                   <Col lg={3} md={2} sm={11} xs={11}>
                     <SpaceBottom xs={-1.5} sm={-1.5} md={0} />
-                    <Title rigth>{type.date}</Title>
+                    <Title rigth>{item.date}</Title>
                   </Col>
                 </Row>
               </TitleCard>
@@ -39,58 +36,71 @@ const Certification = () => {
             <Col lg={11} md={11} sm={11} xs={11}>
               <BodyCard>
                 <Row centered>
-                  <Col lg={6} md={7} sm={11} xs={11}>
+                  <Col lg={6} md={4} sm={12} xs={12}>
                     <TitleBody>
                       <IconContainer>
-                        <img src={type.logo} />
+                        <img src={item.logo} />
                       </IconContainer>
-                      {type.company}
+                      {item.company}
                       <IconContainer left>
                         <Icon
-                          icon={type.iconDiploma.url}
-                          color={type.iconDiploma.color}
-                          width={type.iconDiploma.width}
-                          height={type.iconDiploma.height}
+                          icon={item.iconDiploma.url}
+                          color={item.iconDiploma.color}
+                          width={item.iconDiploma.width}
+                          height={item.iconDiploma.height}
                         />
                       </IconContainer>
                     </TitleBody>
                   </Col>
-
-                  <Col lg={5} md={4} sm={11} xs={11}>
+                  <Col lg={0} md={3} sm={0} xs={0}></Col>
+                  <Col lg={6} md={4} sm={12} xs={12}>
                     <SpaceBottom xs={-1.5} sm={-1.5} md={0} />
                     <TitleBody rigth>
-                      <a href={type.url.url}>
+                      <a href={item.url.url} target="_blank">
                         <IconContainer rigth>
                           <Icon
-                            icon={type.iconLink.url}
-                            color={type.iconLink.color}
-                            width={type.iconLink.width}
-                            height={type.iconLink.height}
+                            icon={item.iconLink.url}
+                            color={item.iconLink.color}
+                            width={item.iconLink.width}
+                            height={item.iconLink.height}
                           />
                         </IconContainer>
-                        {type.url.title}
+                        {item.url.title}
                       </a>
                     </TitleBody>
                   </Col>
                 </Row>
                 <Row centered>
                   <Col lg={11} md={11} sm={11} xs={11}>
-                    <Text>{type.text}</Text>
+                    <Text>{item.text}</Text>
                   </Col>
                 </Row>
-                <Row centered>
-                  <Col lg={9} md={9} sm={11} xs={11}>
-                    {type.tags.map((item) => (
+                <Row>
+                  <Col lg={12} md={12} sm={12} xs={12} space>
+                    {item.tags.map((tag) => (
                       <Tags>
-                        <span>{item.title}</span>
+                        <span>{tag.title}</span>
                       </Tags>
                     ))}
                   </Col>
-                  <Col lg={2} md={2} sm={4} xs={4}>
-                    <ContainerImg>
-                      <img src={type.iconProject} />
-                    </ContainerImg>
-                  </Col>
+                  <Col lg={9} md={9} sm={8} xs={6}></Col>
+                  {item.iconProject && (
+                    <Col lg={3} md={3} sm={4} xs={6}>
+                      <ContainerImg>
+                        <a href={item.iconProject.link} target="_blank">
+                          <img src={item.iconProject.url} />
+                        </a>
+                        <a href={item.iconGithub.link} target="_blank">
+                          <IconContainer left>
+                            <Icon
+                              icon={item.iconGithub.url}
+                              color={item.iconLink.color}
+                            />
+                          </IconContainer>
+                        </a>
+                      </ContainerImg>
+                    </Col>
+                  )}
                 </Row>
               </BodyCard>
             </Col>
