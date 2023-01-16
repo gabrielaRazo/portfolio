@@ -9,66 +9,54 @@ import {
   Title,
   Background,
   ContainerIcons,
-  Icon,
+  IconWrap,
   Subtitle,
+  ContainerButton,
+  StyledIcon,
 } from './about.style';
-import {
-  faSpotify,
-  faReact,
-  faLinkedinIn,
-} from '@fortawesome/free-brands-svg-icons';
-import { faDog, faDumbbell, faBook } from '@fortawesome/free-solid-svg-icons';
-import { StyledIcon } from '../../components/contact/contact.style';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon } from '@iconify/react';
 const About = () => {
   const yearsExperience = moment().diff('2020-04-01', 'years', true).toFixed(1);
   return (
     <>
       <Row centered>
-        <Col lg={2}></Col>
-        <Col lg={7} md={6} sm={12} xs={12}>
+        <Col lg={1} md={1}></Col>
+        <Col lg={6} md={7} sm={11} xs={11}>
           <Title>Me, Myself, and I</Title>
         </Col>
       </Row>
-      <SpaceBottom xl={-2} md={-1.5} />
-      <Col lg={12} md={12} xs={12}>
-        <Background>
-          <Row centered>
-            <Col lg={2} md={2} sm={12} xs={12}>
-              <Row centered>
-                <Col lg={8} xs={6} sm={6} md={12}>
-                  <Img src={avatar} alt="avatar" />
-                </Col>
-              </Row>
-            </Col>
-            <SpaceLeft lg={2} md={2} />
-            <Col lg={9} md={9} xs={12}>
-              <Row centered>
-                <Col lg={12} md={12} xs={12}>
-                  <Text>
-                    <p>
-                      I am a Frontend Developer with {yearsExperience} years of
-                      professional experience.
-                    </p>
-                    <p>
-                      I enjoy researching, designing, prototyping, and coding
-                      e-commerce besides web Apps.
-                    </p>
-                    <p>
-                      When I am not coding, I am either playing video games,
-                      doing CrossFit, reading, lightening to music, or spending
-                      quality time with my dog.
-                    </p>
-                  </Text>
-                </Col>
-              </Row>
-            </Col>
-            <Col lg={2}></Col>
-            <Col lg={9}>
-              <Text>
+      <Background>
+        <Row centered>
+          <Col lg={3} md={3} xs={12} sm={12}>
+            <Row>
+              <Col lg={2} md={0} xs={0} sm={0}></Col>
+              <Col lg={10} md={12} sm={11} xs={11}>
                 <Row centered>
-                  <Col lg={5} md={3} collapse="xs"></Col>
-                  <Col lg={7} md={6} xs={7} sm={5}>
+                  <Col lg={8} xs={6} sm={6} md={6}>
+                    <Img src={avatar} alt="avatar" />
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg={7} md={9} xs={12} sm={12}>
+            <Col lg={12} md={12} sm={12} xs={12}>
+              <Text>
+                <p>
+                  I am a Frontend Developer with {yearsExperience} years of
+                  professional experience.
+                </p>
+                <p>
+                  I enjoy researching, designing, prototyping, and coding
+                  e-commerce besides web Apps.
+                </p>
+                <p>
+                  When I am not coding, I am either playing video games, doing
+                  CrossFit, reading, lightening to music, or spending quality
+                  time with my dog.
+                </p>
+                <Row centered>
+                  <Col lg={6} md={6} xs={9} sm={7}>
                     <br />
                     <ContainerIcons>
                       <StyledIcon>
@@ -77,59 +65,53 @@ const About = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FontAwesomeIcon icon={faSpotify} />
+                          <Icon icon="mdi:spotify" />
                         </a>
                       </StyledIcon>
                       <StyledIcon>
-                        <FontAwesomeIcon icon={faReact} />
+                        <Icon icon="ph:book-duotone" />
                       </StyledIcon>
                       <StyledIcon>
-                        <FontAwesomeIcon icon={faDog} />
+                        <Icon icon="fluent:animal-dog-20-filled" />
                       </StyledIcon>
                       <StyledIcon>
-                        <FontAwesomeIcon icon={faDumbbell} />
+                        <Icon icon="iconoir:favourite-book" />
                       </StyledIcon>
                       <StyledIcon>
-                        <FontAwesomeIcon icon={faBook} />
+                        <Icon icon="mdi:crossfit" />
                       </StyledIcon>
                     </ContainerIcons>
                     <SpaceBottom xl={1} lg={1} md={1} />
                   </Col>
                 </Row>
-                <SpaceLeft lg={0.6}>
-                  <p>
-                    I am open to Job opportunities where I can play a part,
-                    expand my skills, and grow.
-                  </p>
-                </SpaceLeft>
+                <p>
+                  I am open to Job opportunities where I can play a part, expand
+                  my skills, and grow.
+                </p>
+                <Row>
+                  <Col lg={3} md={3} xs={0} sm={0}></Col>
+                  <Col lg={5} md={6} xs={8} sm={6}>
+                    <ContainerButton>
+                      <Subtitle>
+                        <a
+                          href="https://www.linkedin.com/in/gabriela97/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Let's chat!
+                        </a>
+                        <IconWrap>
+                          <Icon icon="tabler:brand-linkedin" />
+                        </IconWrap>
+                      </Subtitle>
+                    </ContainerButton>
+                  </Col>
+                </Row>
               </Text>
-              <Row centered>
-                <Col lg={5} md={5} xs={2} sm={4}></Col>
-                <Col lg={7} md={7} xs={8} sm={8}>
-                  <Subtitle>
-                    <Icon>
-                      <a
-                        href="https://www.linkedin.com/in/gabriela97/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                      </a>
-                    </Icon>
-                    <a
-                      href="mailto:gabrielarazoroldan@gmail.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Let's chat!
-                    </a>
-                  </Subtitle>
-                </Col>
-              </Row>
             </Col>
-          </Row>
-        </Background>
-      </Col>
+          </Col>
+        </Row>
+      </Background>
       <br />
       <br />
       <br />

@@ -4,6 +4,9 @@ import backgrondImage from '../../assets/images/background_code.png';
 
 export const Img = styled.img`
   width: 100%;
+  @media (min-width: 1500px) and (max-width: 2580px) {
+    width: 70%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -25,7 +28,7 @@ export const Text = styled.div`
   text-align: left;
   font-family: 'Yantramanav', sans-serif;
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   @media (max-width: 700px) {
     font-size: 0.9rem;
   }
@@ -40,8 +43,9 @@ export const Background = styled.div`
   display: flex;
   width: 100%;
   flex-flow: row wrap;
+  background-position: center;
   @media (min-width: 1024px) and (max-width: 2570px) {
-    margin-left: 3em;
+    margin-left: 4em;
   }
 `;
 
@@ -55,28 +59,44 @@ export const ContainerIcons = styled.div`
   }
 `;
 
-export const Icon = styled.div`
+export const ContainerButton = styled.div`
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 3px;
+
+  &hover {
+    background-color: ${colors.colors.purple};
+  }
+  border: 1px solid ${colors.colors.pink};
+`;
+
+export const IconWrap = styled.div`
   display: inline-block;
-  text-align: center;
-  background-color: ${colors.colors.pink};
-  width: 36px;
-  height: 36px;
-  margin-right: 10px;
-  border-radius: 50%;
+  margin-left: 5px;
   svg {
     width: 25px;
     height: 25px;
-    padding-left: 1px;
-    color: ${colors.colors.black};
+    color: ${colors.colors.pink};
+  }
+`;
+
+export const StyledIcon = styled.div`
+  display: inline-block;
+  padding-left: 5px;
+  svg {
+    width: 35px;
+    height: 35px;
+    color: ${colors.colors.pink};
   }
 `;
 
 export const Subtitle = styled.div`
   font-size: 1.7rem;
+  text-align: center;
   a {
     color: ${colors.colors.pink};
-  }
-  &:hover {
-    text-decoration: underline;
+    font-weight: 300;
+    text-decoration: none;
   }
 `;
