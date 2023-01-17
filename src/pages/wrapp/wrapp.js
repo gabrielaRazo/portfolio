@@ -40,7 +40,7 @@ const WrappContent = () => {
           </Col>
           <Col lg={11} md={12} xs={12}>
             <div id="About">
-              <SpaceTop xs={5} sm={3} md={10} lg={15} xl={39} />
+              <SpaceTop xs={5} sm={3} md={10} lg={15} xl={15} />
               <About />
             </div>
           </Col>

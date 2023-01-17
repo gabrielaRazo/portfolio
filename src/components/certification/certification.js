@@ -43,12 +43,14 @@ const Certification = () => {
                       </IconContainer>
                       {item.company}
                       <IconContainer left>
-                        <Icon
-                          icon={item.iconDiploma.url}
-                          color={item.iconDiploma.color}
-                          width={item.iconDiploma.width}
-                          height={item.iconDiploma.height}
-                        />
+                        <a href={item.iconDiploma.link} target="_blank">
+                          <Icon
+                            icon={item.iconDiploma.url}
+                            color={item.iconDiploma.color}
+                            width={item.iconDiploma.width}
+                            height={item.iconDiploma.height}
+                          />
+                        </a>
                       </IconContainer>
                     </TitleBody>
                   </Col>

@@ -113,7 +113,7 @@ const About = () => {
           </Background>
         </Col>
       </Row>
-      <SpaceBottom xs={6.1} sm={8} md={13.5} lg={19.2} xl={32} />
+      <SpaceBottom xs={6.1} sm={8} md={13.5} lg={19.2} xl={20} />
     </>
   );
 };

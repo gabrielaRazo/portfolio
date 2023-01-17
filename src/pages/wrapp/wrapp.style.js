@@ -153,7 +153,7 @@ export const Fixed = styled.div`
   position: fixed;
   z-index: 1;
   height: 125px;
-  margin-top: -1em;
+  margin-top: -3em;
   padding-left: 6%;
   padding-right: 6%;
   background-color: ${colors.colors.gray};
