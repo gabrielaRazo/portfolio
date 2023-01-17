@@ -40,13 +40,7 @@ export const Text = styled.div`
 export const Background = styled.div`
   background-image: url(${backgrondImage});
   background-repeat: no-repeat;
-  display: flex;
   width: 100%;
-  flex-flow: row wrap;
-  background-position: center;
-  @media (min-width: 1024px) and (max-width: 2570px) {
-    margin-left: 4em;
-  }
 `;
 
 export const ContainerIcons = styled.div`
@@ -61,9 +55,14 @@ export const ContainerIcons = styled.div`
 
 export const ContainerButton = styled.div`
   color: white;
-  width: 100%;
+  width: 170px;
   border-radius: 10px;
   padding: 3px;
+  margin-left: 0.8em;
+
+  @media (min-width: 360px) and (max-width: 420px) {
+    margin-left: 0px;
+  }
 
   &hover {
     background-color: ${colors.colors.purple};

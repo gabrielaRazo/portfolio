@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactAnimation from '../../components/reactAnimation/animation';
 import { Button, Text } from './home.styles';
-import { Row, Col, Center } from '../../pages/wrapp/wrapp.style';
+import {
+  Row,
+  Col,
+  Center,
+  SpaceTop,
+  SpaceBottom,
+} from '../../pages/wrapp/wrapp.style';
 import AnimationResponsive from '../../components/reactAnimation/responsive/animationResponsive';
 const Home = () => {
   return (
     <>
+      <SpaceTop xs={3} sm={3} md={5} lg={6} xl={7} />
       <Row>
         <Col lg={8} md={10} xs={12}>
           {/* Web */}
@@ -52,6 +59,7 @@ const Home = () => {
           <AnimationResponsive />
         </Col>
       </Row>
+      <SpaceBottom xs={3} sm={4} md={12} lg={5} xl={7} />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, SpaceBottom, SpaceLeft } from '../wrapp/wrapp.style';
+import { Col, Row, SpaceBottom, SpaceTop } from '../wrapp/wrapp.style';
 import avatar from '../../assets/images/avataaars__1___1_-removebg-preview.png';
 import moment from 'moment';
 
@@ -19,27 +19,29 @@ const About = () => {
   const yearsExperience = moment().diff('2020-04-01', 'years', true).toFixed(1);
   return (
     <>
+      <SpaceTop xs={3} sm={3} md={3} lg={5} xl={5} />
       <Row centered>
         <Col lg={1} md={1}></Col>
         <Col lg={6} md={7} sm={11} xs={11}>
           <Title>Me, Myself, and I</Title>
         </Col>
       </Row>
-      <Background>
-        <Row centered>
-          <Col lg={3} md={3} xs={12} sm={12}>
-            <Row>
-              <Col lg={2} md={0} xs={0} sm={0}></Col>
-              <Col lg={10} md={12} sm={11} xs={11}>
-                <Row centered>
-                  <Col lg={8} xs={6} sm={6} md={6}>
-                    <Img src={avatar} alt="avatar" />
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg={7} md={9} xs={12} sm={12}>
+
+      <Row centered>
+        <Col lg={3} md={3} xs={12} sm={12}>
+          <Row>
+            <Col lg={2} md={0} xs={0} sm={0}></Col>
+            <Col lg={10} md={12} sm={11} xs={11}>
+              <Row centered>
+                <Col lg={8} xs={6} sm={6} md={6}>
+                  <Img src={avatar} alt="avatar" />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+        <Col lg={7} md={9} xs={12} sm={12}>
+          <Background>
             <Col lg={12} md={12} sm={12} xs={12}>
               <Text>
                 <p>
@@ -90,7 +92,7 @@ const About = () => {
                 </p>
                 <Row>
                   <Col lg={3} md={3} xs={0} sm={0}></Col>
-                  <Col lg={5} md={6} xs={8} sm={6}>
+                  <Col lg={4} md={4} xs={8} sm={6}>
                     <ContainerButton>
                       <Subtitle>
                         <a
@@ -109,12 +111,10 @@ const About = () => {
                 </Row>
               </Text>
             </Col>
-          </Col>
-        </Row>
-      </Background>
-      <br />
-      <br />
-      <br />
+          </Background>
+        </Col>
+      </Row>
+      <SpaceBottom xs={10} sm={10} md={12} lg={16} xl={17} />
     </>
   );
 };

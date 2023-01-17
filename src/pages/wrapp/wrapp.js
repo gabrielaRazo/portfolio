@@ -4,7 +4,7 @@ import Contact from '../../components/contact/contact';
 import Header from '../../layouts/header/header';
 import HeaderResponsive from '../../layouts/header/responsive/headerResponsive';
 import Home from '../home/home';
-import { Col, Padding, Row } from './wrapp.style';
+import { Col, Padding, Row, SpaceBottom } from './wrapp.style';
 import Skills from '../skills/skills';
 const WrappContent = () => {
   return (
