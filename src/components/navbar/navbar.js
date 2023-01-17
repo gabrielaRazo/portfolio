@@ -13,19 +13,19 @@ const Navbar = () => {
           onClick={() => setSelected('Home')}
           active={selected === 'Home' ? true : false}
         >
-          <span>Home</span>
+          <a href="#Home">Home</a>
         </Tag>
         <Tag
           onClick={() => setSelected('About me')}
           active={selected === 'About me' ? true : false}
         >
-          <span>About me</span>
+          <a href="#About">About me</a>
         </Tag>
         <Tag
           onClick={() => setSelected('My Skills')}
           active={selected === 'My Skills' ? true : false}
         >
-          <span>My Skills</span>
+          <a href="#Skills">My Skills</a>
         </Tag>
         <Tag
           onClick={() => setSelected('Work')}

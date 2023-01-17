@@ -14,13 +14,13 @@ const Menu = () => {
 
   return (
     <StyledMenu open={isMenuOpen} aria-hidden={!isHidden}>
-      <a href="/" tabIndex={tabIndex}>
+      <a href="#Home" tabIndex={tabIndex}>
         <span>Home</span>
       </a>
-      <a href="/" tabIndex={tabIndex}>
+      <a href="#About" tabIndex={tabIndex}>
         <span>About me</span>
       </a>
-      <a href="/" tabIndex={tabIndex}>
+      <a href="#Skills" tabIndex={tabIndex}>
         <span>My Skills</span>
       </a>
       <a href="/" tabIndex={tabIndex}>

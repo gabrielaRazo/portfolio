@@ -12,7 +12,7 @@ import AnimationResponsive from '../../components/reactAnimation/responsive/anim
 const Home = () => {
   return (
     <>
-      <SpaceTop xs={3} sm={3} md={5} lg={6} xl={7} />
+      <SpaceTop xs={3} sm={3} md={7} lg={6} xl={12} />
       <Row>
         <Col lg={8} md={10} xs={12}>
           {/* Web */}
@@ -59,7 +59,6 @@ const Home = () => {
           <AnimationResponsive />
         </Col>
       </Row>
-      <SpaceBottom xs={3} sm={4} md={12} lg={5} xl={7} />
     </>
   );
 };

@@ -119,19 +119,19 @@ export const SpaceBottom = styled.div`
 
 export const SpaceTop = styled.div`
   @media (max-width: 376px) {
-    margin-bottom: ${({ xs }) => xs + `em`};
+    padding-top: ${({ xs }) => xs + `em`};
   }
   @media (min-width: 376px) and (max-width: 768px) {
-    margin-bottom: ${({ sm }) => sm + `em`};
+    padding-top: ${({ sm }) => sm + `em`};
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    margin-bottom: ${({ md }) => md + `em`};
+    padding-top: ${({ md }) => md + `em`};
   }
   @media (min-width: 1024px) and (max-width: 1450px) {
-    margin-bottom: ${({ lg }) => lg + `em`};
+    padding-top: ${({ lg }) => lg + `em`};
   }
   @media (min-width: 1451px) and (max-width: 2580px) {
-    margin-bottom: ${({ xl }) => xl + `em`};
+    padding-top: ${({ xl }) => xl + `em`};
   }
 `;
 

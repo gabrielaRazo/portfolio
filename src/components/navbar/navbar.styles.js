@@ -4,6 +4,10 @@ import * as colors from '../../stylesheet/Colors.style';
 export const Tag = styled.div`
   margin-top: 1.7em;
   width: 100%;
+  a {
+    color: ${colors.colors.pink};
+    text-decoration: none;
+  }
   color: ${colors.colors.pink};
   opacity: 0.9;
   font-family: 'Yantramanav', sans-serif;

@@ -19,7 +19,6 @@ const About = () => {
   const yearsExperience = moment().diff('2020-04-01', 'years', true).toFixed(1);
   return (
     <>
-      <SpaceTop xs={3} sm={3} md={3} lg={5} xl={5} />
       <Row centered>
         <Col lg={1} md={1}></Col>
         <Col lg={6} md={7} sm={11} xs={11}>
@@ -114,7 +113,7 @@ const About = () => {
           </Background>
         </Col>
       </Row>
-      <SpaceBottom xs={10} sm={10} md={12} lg={16} xl={17} />
+      <SpaceBottom xs={6.1} sm={8} md={12.1} lg={19.2} xl={20} />
     </>
   );
 };

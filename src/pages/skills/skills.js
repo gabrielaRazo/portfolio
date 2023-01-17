@@ -6,8 +6,8 @@ const Skills = () => {
   return (
     <>
       <Background />
-      <Row centered>
-        <Col lg={1} md={2} sm={1} xs={1}></Col>
+      <Row centered id="Skills">
+        <Col lg={1} md={1} sm={1} xs={1}></Col>
         <Col lg={9} md={10} sm={11} xs={11}>
           <CardWrap />
         </Col>

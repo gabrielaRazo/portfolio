@@ -2,13 +2,15 @@ import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
 export const Card = styled.div`
-  margin-top: 8em;
+  margin-top: 15em;
   position: absolute;
   height: 100%;
   @media (max-width: 420px) {
     width: 75%;
+    margin-top: 4.5em;
   }
   @media (min-width: 420px) and (max-width: 768px) {
+    margin-top: 7em;
     width: 78%;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
