@@ -5,8 +5,6 @@ export const Tag = styled.div`
   margin-top: 1.7em;
   width: 100%;
   a {
-    color: ${colors.colors.pink};
-    text-decoration: none;
   }
   color: ${colors.colors.pink};
   opacity: 0.9;
@@ -14,7 +12,9 @@ export const Tag = styled.div`
   text-align: center;
   font-size: 1.1rem;
   cursor: pointer;
-  span {
+  a {
+    color: ${colors.colors.pink};
+    text-decoration: none;
     &:hover {
       padding: 10px 25px 10px 25px;
       border-radius: 10px;

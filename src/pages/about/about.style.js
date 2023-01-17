@@ -13,7 +13,7 @@ export const Title = styled.h1`
   color: ${colors.colors.purple};
   font-family: 'Playfair Display', serif;
   @media (min-width: 1200px) and (max-width: 2570px) {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -31,6 +31,9 @@ export const Text = styled.div`
   font-size: 1.1rem;
   @media (max-width: 700px) {
     font-size: 0.9rem;
+  }
+  @media (min-width: 1200px) and (max-width: 2570px) {
+    font-size: 1.4rem;
   }
   p {
     margin-top: -0.5em;

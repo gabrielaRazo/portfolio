@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as colors from '../../stylesheet/Colors.style';
 
 function getWidthStrings(span) {
   if (!span) {
@@ -144,5 +145,23 @@ export const Row = styled.div`
     content: '';
     clear: both;
     display: table;
+  }
+`;
+
+export const Fixed = styled.div`
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 125px;
+  margin-top: -1em;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: ${colors.colors.gray};
+  overflow: hidden;
+  @media (min-width: 300px) and (max-width: 1000px) {
+    display: none;
+  }
+  @media (min-width: 1001px) and (max-width: 1500px) {
+    height: 115px;
   }
 `;

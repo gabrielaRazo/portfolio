@@ -32,7 +32,7 @@ export const TitleBody = styled.h1`
       ` text-align: right; justify-content: flex-end;  padding-right: 10px;`};
     display: flex;
     margin-left: 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     text-align: left;
   }
   a {
@@ -62,14 +62,14 @@ export const Text = styled.div`
   font-size: 0.75rem;
   text-align: justify;
   @media (min-width: 1200px) and (max-width: 2570px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 `;
 
 export const Tags = styled.div`
   font-size: 0.65rem;
   @media (min-width: 1200px) and (max-width: 2570px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   padding-left: 3px;
   margin-bottom: 1em;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../stylesheet/Colors.style';
 
 export const Logo = styled.img`
   width: 70px;
@@ -9,4 +10,7 @@ export const Container = styled.div`
   grid-template-columns: 10% 90%;
   grid-template-rows: auto 50px;
   column-gap: 0.5rem;
+  @media (min-width: 1451px) and (max-width: 2580px) {
+    padding-top: 0.8em;
+  }
 `;

@@ -13,7 +13,7 @@ export const Text = styled.div`
       text-align: center;
     }
     @media (min-width: 1200px) and (max-width: 2570px) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     @media (max-width: 480px) {
       text-align: center;
@@ -40,7 +40,7 @@ export const Text = styled.div`
     color: ${colors.colors.darkGray};
     font-size: 20px;
     @media (min-width: 1200px) and (max-width: 2570px) {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
     @media (min-width: 481px) and (max-width: 768px) {
       text-align: center;
@@ -65,7 +65,7 @@ export const Button = styled.button`
     color: ${colors.colors.white};
     font-family: 'Yantramanav', sans-serif;
     @media (min-width: 1200px) and (max-width: 2570px) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
 `;
