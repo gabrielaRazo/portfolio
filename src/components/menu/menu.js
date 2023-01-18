@@ -60,7 +60,9 @@ const Menu = () => {
           <StyledIcon>
             <a
               onClick={() =>
-                window.open('http://localhost:3000/Gabriela-CV.pdf')
+                window.open(
+                  'https://gabrielaportfolio.netlify.app/Gabriela-CV.pdf'
+                )
               }
             >
               <FontAwesomeIcon icon={faFileArrowDown} />
