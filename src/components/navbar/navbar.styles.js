@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 import * as colors from '../../stylesheet/Colors.style';
 
-export const Tag = styled.div`
+export const Tag = styled.a`
   margin-top: 1.7em;
   width: 100%;
-  a {
-  }
   color: ${colors.colors.pink};
   opacity: 0.9;
   font-family: 'Yantramanav', sans-serif;
   text-align: center;
+  text-decoration: none;
   font-size: 1.1rem;
   cursor: pointer;
-  a {
+  span {
     color: ${colors.colors.pink};
-    text-decoration: none;
+
     &:hover {
       padding: 10px 25px 10px 25px;
       border-radius: 10px;

@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Container, Tag } from './navbar.styles';
 
 const Navbar = () => {
-  const [selected, setSelected] = useState('Home');
+  const dispatch = useDispatch();
+  const selected = useSelector((state) => state.dasboardReducer.selected);
+  const onHandleSelected = (selected) => {
+    dispatch({ type: 'CHANGE_SELECTED_VALUE', selected: selected });
+  };
   return (
     <>
       <Container>
@@ -10,31 +15,34 @@ const Navbar = () => {
           <span></span>
         </Tag>
         <Tag
-          onClick={() => setSelected('Home')}
+          onClick={() => onHandleSelected('Home')}
           active={selected === 'Home' ? true : false}
+          href="#Home"
         >
-          <a href="#Home">Home</a>
+          <span>Home</span>
         </Tag>
         <Tag
-          onClick={() => setSelected('About me')}
+          onClick={() => onHandleSelected('About me')}
           active={selected === 'About me' ? true : false}
+          href="#About"
         >
-          <a href="#About">About me</a>
+          <span>About me</span>
         </Tag>
         <Tag
-          onClick={() => setSelected('My Skills')}
+          onClick={() => onHandleSelected('My Skills')}
           active={selected === 'My Skills' ? true : false}
+          href="#Skills"
         >
-          <a href="#Skills">My Skills</a>
+          <span> My Skills</span>
         </Tag>
         <Tag
-          onClick={() => setSelected('Work')}
+          onClick={() => onHandleSelected('Work')}
           active={selected === 'Work' ? true : false}
         >
           <span>Work</span>
         </Tag>
         <Tag
-          onClick={() => setSelected('Projects')}
+          onClick={() => onHandleSelected('Projects')}
           active={selected === 'Projects' ? true : false}
         >
           <span>Projects</span>
