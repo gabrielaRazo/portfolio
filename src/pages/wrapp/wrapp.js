@@ -50,8 +50,6 @@ const WrappContent = () => {
       </Padding>
       <Row>
         <Skills />
-      </Row>
-      <Row>
         <Col lg={12}>
           <Footer />
         </Col>

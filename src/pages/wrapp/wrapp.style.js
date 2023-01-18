@@ -149,19 +149,14 @@ export const Row = styled.div`
 `;
 
 export const Fixed = styled.div`
-  width: 100%;
   position: fixed;
+  top: 0;
   z-index: 1;
-  height: 125px;
-  margin-top: -3em;
+  width: 100%;
   padding-left: 6%;
-  padding-right: 6%;
   background-color: ${colors.colors.gray};
   overflow: hidden;
   @media (min-width: 300px) and (max-width: 1000px) {
     display: none;
-  }
-  @media (min-width: 1001px) and (max-width: 1500px) {
-    height: 115px;
   }
 `;

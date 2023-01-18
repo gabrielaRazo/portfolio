@@ -7,7 +7,6 @@ import Menu from '../../menu/menu';
 const NavbarResponsive = () => {
   const menuId = 'main-menu';
   const isMenuOpen = useSelector((state) => state.dasboardReducer.isMenuOpen);
-  console.log('isMenuOpen', isMenuOpen);
 
   return (
     <>
