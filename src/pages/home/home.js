@@ -25,7 +25,9 @@ const Home = () => {
             <Button>
               <span
                 onClick={() =>
-                  window.open('http://localhost:3000/Gabriela-CV.pdf')
+                  window.open(
+                    'https://gabrielaportfolio.netlify.app/Gabriela-CV.pdf'
+                  )
                 }
               >
                 Check my CV

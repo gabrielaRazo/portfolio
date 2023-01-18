@@ -20,7 +20,7 @@ export const certification = [
       color: '#d991b9',
       width: '18',
       height: '18',
-      link: 'http://localhost:3000/generation.pdf',
+      link: 'https://gabrielaportfolio.netlify.app/generation.pdf',
     },
     iconLink: {
       url: 'mdi:link-variant',
@@ -62,7 +62,7 @@ export const certification = [
       color: '#d991b9',
       width: '18',
       height: '18',
-      link: 'http://localhost:3000/Women_In_Leadership.pdf',
+      link: 'https://gabrielaportfolio.netlify.app/Women_In_Leadership.pdf',
     },
     iconLink: {
       url: 'mdi:link-variant',
@@ -88,7 +88,7 @@ export const certification = [
       color: '#d991b9',
       width: '18',
       height: '18',
-      link: 'http://localhost:3000/React_Testing.pdf',
+      link: 'https://gabrielaportfolio.netlify.app/React_Testing.pdf',
     },
     iconLink: {
       url: 'mdi:link-variant',
@@ -131,7 +131,7 @@ export const certification = [
       color: '#d991b9',
       width: '18',
       height: '18',
-      link: 'http://localhost:3000/React_Bootcamp.pdf',
+      link: 'https://gabrielaportfolio.netlify.app/React_Bootcamp.pdf',
     },
     iconLink: {
       url: 'mdi:link-variant',
