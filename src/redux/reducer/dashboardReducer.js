@@ -3,6 +3,7 @@ import * as dashboardActions from '../actions/dashboardActions';
 const initialState = {
   isMenuOpen: false,
   selected: 'Home',
+  height: null,
 };
 
 export default (state = initialState, action) => {
@@ -13,6 +14,9 @@ export default (state = initialState, action) => {
 
     case dashboardActions.CHANGE_SELECTED_VALUE:
       return { ...state, selected: action.selected };
+
+    case dashboardActions.CHANGE_HEIGHT_VALUE:
+      return { ...state, height: action.height };
 
     default:
       return state;

@@ -12,7 +12,7 @@ import AnimationResponsive from '../../components/reactAnimation/responsive/anim
 const Home = () => {
   return (
     <>
-      <SpaceTop xs={3} sm={3} md={7} lg={18} xl={20} />
+      <SpaceTop xs={3} sm={3} md={7} lg={18} xl={15} />
       <Row>
         <Col lg={8} md={10} xs={12}>
           {/* Web */}
@@ -42,7 +42,9 @@ const Home = () => {
               <Button>
                 <span
                   onClick={() =>
-                    window.open('http://localhost:3000/Gabriela-CV.pdf')
+                    window.open(
+                      'https://gabrielaportfolio.netlify.app/Gabriela-CV.pdf'
+                    )
                   }
                 >
                   Check my CV

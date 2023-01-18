@@ -6,6 +6,7 @@ import HeaderResponsive from '../../layouts/header/responsive/headerResponsive';
 import Home from '../home/home';
 import { Col, Fixed, Padding, Row, SpaceBottom, SpaceTop } from './wrapp.style';
 import Skills from '../skills/skills';
+import Footer from '../../layouts/footer/footer';
 const WrappContent = () => {
   return (
     <>
@@ -49,6 +50,11 @@ const WrappContent = () => {
       </Padding>
       <Row>
         <Skills />
+      </Row>
+      <Row>
+        <Col lg={12}>
+          <Footer />
+        </Col>
       </Row>
     </>
   );
