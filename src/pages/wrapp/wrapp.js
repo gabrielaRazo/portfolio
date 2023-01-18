@@ -10,8 +10,10 @@ import Footer from '../../layouts/footer/footer';
 const WrappContent = () => {
   return (
     <>
-      <Fixed>
-        <Col lg={12}>
+      {/* <Fixed> */}
+      <Row centered>
+        <Col lg={1}></Col>
+        <Col lg={11}>
           <Col lg={1} md={1} xs={1}></Col>
           <Col lg={10} md={8}>
             <Col lg={12} collapse="xs" hidden="md">
@@ -19,7 +21,8 @@ const WrappContent = () => {
             </Col>
           </Col>
         </Col>
-      </Fixed>
+      </Row>
+      {/*  </Fixed> */}
       <Padding>
         <Row>
           {/* Just for Web */}
